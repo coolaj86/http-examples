@@ -1,7 +1,9 @@
 multipart-form
 ====
 
-This example shows the raw communication
+This example shows the raw conversation between a client and server as well as each part as an individual message.
+
+Please look at the raw files to get a gist of the idea before reading the explanations in this README.
 
   * 0-full-transcript.http.raw
     * 1-request.http.raw
