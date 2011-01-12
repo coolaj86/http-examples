@@ -3,12 +3,15 @@ multipart-form
 
 This example shows the raw conversation between a client and server as well as each part as an individual message.
 
+It also shows an example object representation of what the expected parsed result would look like in JavaScript / Ruby / Python, etc.
+
 Please look at the raw files to get a gist of the idea before reading the explanations in this README.
 
   * [0-full-transcript.http.raw](https://github.com/coolaj86/http-examples/raw/master/multipart-form/0-full-transcript.http.raw)
     * 1-request.http.raw
     * [2-response.http.raw](https://github.com/coolaj86/http-examples/raw/master/multipart-form/2-response.http.raw)
     * [3-post-multiple-inputs.http.raw](https://github.com/coolaj86/http-examples/raw/master/multipart-form/3-post-multiple-inputs.http.raw)
+  * [expected-parsed-result.js](https://github.com/coolaj86/http-examples/raw/master/multipart-form/expected-parsed-result.js)
 
 post-multiple-inputs
 ====
