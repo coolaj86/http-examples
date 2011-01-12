@@ -5,10 +5,10 @@ This example shows the raw conversation between a client and server as well as e
 
 Please look at the raw files to get a gist of the idea before reading the explanations in this README.
 
-  * 0-full-transcript.http.raw
+  * [0-full-transcript.http.raw](https://github.com/coolaj86/http-examples/raw/master/multipart-form/0-full-transcript.http.raw)
     * 1-request.http.raw
-    * 2-response.http.raw
-    * 3-post-multiple-inputs.http.raw
+    * [2-response.http.raw](https://github.com/coolaj86/http-examples/raw/master/multipart-form/2-response.http.raw)
+    * [3-post-multiple-inputs.http.raw](https://github.com/coolaj86/http-examples/raw/master/multipart-form/3-post-multiple-inputs.http.raw)
 
 post-multiple-inputs
 ====
