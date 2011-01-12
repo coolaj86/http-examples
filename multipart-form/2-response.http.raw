@@ -1,0 +1,17 @@
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Content-Type: text/html; charset=utf-8
+Content-Length: 373
+Date: Wed, 12 Jan 2011 19:22:51 GMT
+X-Response-Time: 0ms
+Connection: keep-alive
+
+<html><body>
+	<form method="post" enctype="multipart/form-data">
+		<p>Name: <input type="text" name="name" /></p>
+		<p>Email: <input type="text" name="email" /></p>
+		<p>Avatar: <input type="file" name="avatar" /></p>
+		<p>Attachments: <input type="file" name="attachments[]" multiple=multiple /></p>
+		<p><input type="submit" value="Upload" /></p>
+	</form>
+</body></html>
