@@ -11,10 +11,10 @@ Notes:
     * `^M` represents `\r` or `CR` (as seen in vim, tthe supreme text editor)
     * `newline`s are represented as new lines rather than `\n` or `LF`
 
-The basic format of an HTTP request is `<REQUEST><HEADERS><BODY>`
-
 HTTP format in a nutshell
 ====
+
+The basic format of an HTTP request is `<REQUEST><HEADERS><BODY>`
 
 http request
 ---
@@ -28,11 +28,12 @@ Explanation:
   * Essentially `<REQUEST>` is `<HTTP-VERB> <RESOURCE> <PROTOCOL>/<VERSION>`
     * Clients should use a single space between tokens
     * Servers should discard extra whitespace
+    * The `<HTTP-VERB>` is one of `HEAD`, `OPTIONS`, `GET`, `POST`, `PUT`, `DELETE`, or possibly a rarer or custom verb
 
-  * `<REQUEST>` details the which resource should be retrieved (in this case, the document root - '/')
+  * `<REQUEST>` details which resource should be retrieved (in this case `/`, the document root)
 
   * `<REQUEST>` is unique in that it does **not** begin with `<CRLF>`
-    * like all of the other headers, `<REQUEST>` does not end with `<CRLF>` 
+    * like most other directives, `<REQUEST>` does **not** end with `<CRLF>` 
 
 http headers format
 ----
@@ -52,12 +53,12 @@ Note: there is a trailing new line after the last `^M` that may not show up
 
 Explanation:
 
-  * This example shows a multipart form POST
+  * This example shows a `multipart` form `POST`
     * `Content-Type: multipart/form-data; boundary=---------------------------114772229410704779042051621609`
 
-  * Each `<HTTP-HEADER>` is **preceeded** by `<CRLF>`
+  * `<CRLF>` **preceedes** each `<HTTP-HEADER>`
 
-  * The entire `<HTTP-HEADERS>` block is followed by a single `<CRLF>`
+  * The entire `<HTTP-HEADERS>` block is ended by a trailing `<CRLF>`
 
 http body format
 ---
