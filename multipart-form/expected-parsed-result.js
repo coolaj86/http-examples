@@ -14,13 +14,13 @@
             name: "file1.txt",
             size: 15,
             type: "text/plain",
-            path: "/tmp/c3e29fa4de1d9f.png"
+            path: "/tmp/c3e29fa4de1d9f.txt"
         },
         {
             name: "file2.txt",
             size: 58,
             type: "text/plain",
-            path: "/tmp/9a4ab48dffe1d9.png"
+            path: "/tmp/9a4ab48dffe1d9.txt"
         }
     ]
 }
