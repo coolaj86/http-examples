@@ -1,3 +1,9 @@
+HTTP Echo Server
+===
+
+  * <http://foobar3000.com>
+  * <http://helloworld3000.com>
+
 HTTP Examples
 ====
 
