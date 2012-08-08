@@ -34,7 +34,7 @@ Explanation:
   * Essentially `<REQUEST>` is `<HTTP-VERB> <RESOURCE> <PROTOCOL>/<VERSION>`
     * Clients should use a single space between tokens
     * Servers should discard extra whitespace
-    * The `<HTTP-VERB>` is one of `HEAD`, `OPTIONS`, `GET`, `POST`, `PUT`, `DELETE`, or possibly a rarer or custom verb
+    * The `<HTTP-VERB>` is one of `HEAD`, `OPTIONS`, `GET`, `POST`, `PATCH`, `PUT`, `DELETE`, or possibly a rarer or custom verb
 
   * `<REQUEST>` details which resource should be retrieved (in this case `/`, the document root)
 
