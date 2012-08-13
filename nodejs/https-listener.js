@@ -4,9 +4,11 @@
 
   var https = require('https')
     , crypto = require('crypto')
-    , fs = require("fs")
-    , privateKey = fs.readFileSync('foobar-ssl.key').toString()
-    , certificate = fs.readFileSync('foobar-ssl.crt').toString()
+    , fs = require('fs')
+    , path = require('path')
+    , certPath = path.join(__dirname, '..', 'certs')
+    , privateKey = fs.readFileSync(path.join(certPath, 'fooserver-ssl.key.pem').toString())
+    , certificate = fs.readFileSync(path.join(certPath, 'fooserver-ssl.crt.pem').toString())
     , credentials = {
           key: privateKey
         , cert: certificate
