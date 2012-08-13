@@ -2,16 +2,22 @@
 (function () {
   "use strict";
 
+  // See: http://nodejs.org/api/https.html
   var https = require('https')
     , crypto = require('crypto')
     , fs = require('fs')
     , path = require('path')
     , certPath = path.join(__dirname, '..', 'certs')
-    , privateKey = fs.readFileSync(path.join(certPath, 'fooserver-ssl.key.pem').toString())
+    // needs passphrase
+    , privateKey = fs.readFileSync(path.join(certPath, 'fooserver-ssl.key.orig.pem').toString())
+    // doesn't need passphrase
+    //, privateKey = fs.readFileSync(path.join(certPath, 'fooserver-ssl.key.pem').toString())
     , certificate = fs.readFileSync(path.join(certPath, 'fooserver-ssl.crt.pem').toString())
     , credentials = {
           key: privateKey
         , cert: certificate
+        // Only needed with the key that needs a passphrase
+        , passphrase: "HurpDurpHuzzah"
       }
     , server
     ;
